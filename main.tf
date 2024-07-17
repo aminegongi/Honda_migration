@@ -118,7 +118,7 @@ resource "azurerm_windows_virtual_machine" "VM-AD" {
   location              = azurerm_resource_group.Honda.location
   resource_group_name   = azurerm_resource_group.Honda.name
   network_interface_ids = [azurerm_network_interface.VM-AD_nic.id]
-  size                  = "Standard_F2"
+  size                  = "Standard_D4a_v4"
   admin_username        = "adminuser"
   admin_password        = "P@$$w0rd1234!"
   
@@ -153,7 +153,7 @@ resource "azurerm_windows_virtual_machine" "VM-ERP" {
   location              = azurerm_resource_group.Honda.location
   resource_group_name   = azurerm_resource_group.Honda.name
   network_interface_ids = [azurerm_network_interface.VM-ERP_nic.id]
-  size                  = "Standard_F2"
+  size                  = "Standard_D4a_v4"
   admin_username        = "adminuser"
   admin_password        = "P@$$w0rd1234!"
   
@@ -188,7 +188,7 @@ resource "azurerm_windows_virtual_machine" "VM-INCADEA" {
   location              = azurerm_resource_group.Honda.location
   resource_group_name   = azurerm_resource_group.Honda.name
   network_interface_ids = [azurerm_network_interface.VM-INCADE_nic.id]
-  size                  = "Standard_F2"
+  size                  = "Standard_D4a_v4"
   admin_username        = "adminuser"
   admin_password        = "P@$$w0rd1234!"
   
